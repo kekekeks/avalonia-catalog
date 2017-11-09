@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>ControlCatalog</AssemblyName>
+    <OutputType>exe</OutputType>
+    <PackageId>ControlCatalog</PackageId>
+    <RuntimeIdentifiers>win7-x64;linux-x64;osx.10.10-x64</RuntimeIdentifiers>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <OutputTypeEx>winexe</OutputTypeEx>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="**\*.xaml;Assets\*" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Desktop" Version="0.5.2-build4218" />
+
+  </ItemGroup>
+</Project>
